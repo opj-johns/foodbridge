@@ -1,0 +1,47 @@
+<header class="bg-red-700 text-white shadow-md sticky top-0 z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+      <!-- Logo -->
+      <a href="/" class="flex items-center space-x-2">
+        <img src="foodbridgelogo.png" alt="FoodBridge Logo" class="h-8 w-auto" />
+        <span class="text-xl font-semibold">FoodBridge</span>
+      </a>
+  
+      <!-- Navigation Links (hidden on small screens) -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="/" class="hover:text-yellow-300">Home</a>
+        <a href="/how-it-works" class="hover:text-yellow-300">How It Works</a>
+        <a href="/donor-portal" class="hover:text-yellow-300">Donor Portal</a>
+        <a href="/find-food-joints" class="hover:text-yellow-300">Find Food Joints</a>
+        <a href="/about" class="hover:text-yellow-300">About Us</a>
+        <a href="/get-involved" class="hover:text-yellow-300">Get Involved</a>
+      </nav>
+  
+      <!-- Donate Button -->
+      <a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page" class="hidden md:inline-block bg-yellow-500 text-red-700 font-bold py-2 px-4 rounded hover:bg-yellow-600 transition duration-300">
+        Join Us/Login
+      </a>
+  
+      <!-- Mobile Menu Button -->
+      <button (click)="toggleMenu()" class="md:hidden text-yellow-500 focus:outline-none">
+        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+          <path *ngIf="!menuOpen" d="M4 6h16M4 12h16M4 18h16" />
+          <path *ngIf="menuOpen" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  
+    <!-- Mobile Menu (Visible when menuOpen is true) -->
+    <div *ngIf="menuOpen" class="md:hidden bg-red-800 text-white py-2">
+      <nav class="space-y-1">
+        <a href="/" class="block px-4 py-2 hover:bg-red-700">Home</a>
+        <a href="/how-it-works" class="block px-4 py-2 hover:bg-red-700">How It Works</a>
+        <a href="/donor-portal" class="block px-4 py-2 hover:bg-red-700">Donor Portal</a>
+        <a href="/find-food-joints" class="block px-4 py-2 hover:bg-red-700">Find Food Joints</a>
+        <a href="/about" class="block px-4 py-2 hover:bg-red-700">About Us</a>
+        <a href="/get-involved" class="block px-4 py-2 hover:bg-red-700">Get Involved</a>
+        <a href="/donate" class="block px-4 py-2 text-yellow-500 font-bold hover:bg-red-700">Join us/Login</a>
+      </nav>
+    </div>
+  </header>
+
+  

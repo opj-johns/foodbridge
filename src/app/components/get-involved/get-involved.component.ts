@@ -3,8 +3,8 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-get-involved',
-  standalone: true,
   imports: [],
+  standalone: true,
   templateUrl: './get-involved.component.html',
   styleUrl: './get-involved.component.css'
 })

@@ -5,8 +5,8 @@ import { Router, RouterLink, RouterLinkActive, RouterModule } from '@angular/rou
 
 @Component({
   selector: 'app-header',
-  standalone: true,
   imports: [CommonModule, RouterLink, RouterLinkActive],
+  standalone: true,
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })

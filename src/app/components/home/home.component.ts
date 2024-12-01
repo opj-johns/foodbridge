@@ -6,11 +6,10 @@ import { GetInvolvedComponent } from "../get-involved/get-involved.component";
 import { AboutUsComponent } from "../about-us/about-us.component";
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [CommonModule, HeroComponent, OurWorkComponent, GetInvolvedComponent, AboutUsComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+    selector: 'app-home',
+    imports: [CommonModule, HeroComponent, OurWorkComponent, GetInvolvedComponent, AboutUsComponent],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.css'
 })
 export class HomeComponent {
 

@@ -3,8 +3,8 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-hero',
-  standalone: true,
   imports: [],
+  standalone: true,
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css'
 })

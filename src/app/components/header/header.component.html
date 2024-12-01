@@ -1,47 +1,49 @@
-<header class="bg-red-700 text-white shadow-md sticky top-0 z-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
-      <!-- Logo -->
-      <a href="/" class="flex items-center space-x-2">
-        <img src="foodbridgelogo.png" alt="FoodBridge Logo" class="h-8 w-auto" />
-        <span class="text-xl font-semibold">FoodBridge</span>
-      </a>
-  
-      <!-- Navigation Links (hidden on small screens) -->
-      <nav class="hidden md:flex space-x-6">
-        <a href="/" class="hover:text-yellow-300">Home</a>
-        <a href="/how-it-works" class="hover:text-yellow-300">How It Works</a>
-        <a href="/donor-portal" class="hover:text-yellow-300">Donor Portal</a>
-        <a href="/find-food-joints" class="hover:text-yellow-300">Find Food Joints</a>
-        <a href="/about" class="hover:text-yellow-300">About Us</a>
-        <a href="/get-involved" class="hover:text-yellow-300">Get Involved</a>
-      </nav>
-  
-      <!-- Donate Button -->
-      <a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page" class="hidden md:inline-block bg-yellow-500 text-red-700 font-bold py-2 px-4 rounded hover:bg-yellow-600 transition duration-300">
-        Join Us/Login
-      </a>
-  
-      <!-- Mobile Menu Button -->
-      <button (click)="toggleMenu()" class="md:hidden text-yellow-500 focus:outline-none">
-        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-          <path *ngIf="!menuOpen" d="M4 6h16M4 12h16M4 18h16" />
-          <path *ngIf="menuOpen" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
+<!-- header.component.html -->
+<header class="fixed top-0 w-full z-50 bg-[#FBECE5] shadow-md">
+  <div class="container mx-auto flex justify-between items-center py-4 px-4 md:px-8">
+    <!-- Logo -->
+    <div class="text-2xl font-bold text-[#440047]">
+      Food<span class="text-[#E11D74]">Bridge</span>
     </div>
-  
-    <!-- Mobile Menu (Visible when menuOpen is true) -->
-    <div *ngIf="menuOpen" class="md:hidden bg-red-800 text-white py-2">
-      <nav class="space-y-1">
-        <a href="/" class="block px-4 py-2 hover:bg-red-700">Home</a>
-        <a href="/how-it-works" class="block px-4 py-2 hover:bg-red-700">How It Works</a>
-        <a href="/donor-portal" class="block px-4 py-2 hover:bg-red-700">Donor Portal</a>
-        <a href="/find-food-joints" class="block px-4 py-2 hover:bg-red-700">Find Food Joints</a>
-        <a href="/about" class="block px-4 py-2 hover:bg-red-700">About Us</a>
-        <a href="/get-involved" class="block px-4 py-2 hover:bg-red-700">Get Involved</a>
-        <a href="/donate" class="block px-4 py-2 text-yellow-500 font-bold hover:bg-red-700">Join us/Login</a>
-      </nav>
-    </div>
-  </header>
 
-  
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex space-x-8 items-center text-[#440047]">
+      <a routerLink="/about-us" routerLinkActive="Active"  class="hover:text-[#91D18B] transition">About Us</a>
+      <a routerLink="/our-work" routerLinkActive="Active" class="hover:text-[#91D18B] transition">Our Work</a>
+      <a routerLink="/get-involved" routerLinkActive="Active" class="hover:text-[#91D18B] transition">Get Involved</a>
+      <a routerLink="/contact" class="hover:text-[#91D18B] transition">Contact</a>
+      <button (click)="donate()" class="bg-[#E11D74] text-white px-4 py-2 rounded hover:bg-[#C01863] transition">
+      Donate
+      </button>
+      <button (click)="signin()" class="bg-[#91D18B] text-white px-4 py-2 rounded hover:bg-[#7BB778] transition">
+        Sign In
+      </button>
+    </nav>
+
+    <!-- Mobile Menu Icon -->
+    <button
+      (click)="toggleMobileMenu()"
+      class="md:hidden text-[#440047] focus:outline-none focus:ring-2 focus:ring-[#E11D74]"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Navigation -->
+  <div *ngIf="isMobileMenuOpen" class="md:hidden bg-[#FBECE5] px-4 pb-4">
+    <nav class="flex flex-col space-y-4 text-[#440047]">
+      <a routerLink="/about-us" routerLinkActive="Active" class="hover:text-[#91D18B] transition">About Us</a>
+      <a routerLink="/our-work" routerLinkActive="Active" class="hover:text-[#91D18B] transition">Our Work</a>
+      <a routerLink="/get-involved" routerLinkActive="Active" class="hover:text-[#91D18B] transition">Get Involved</a>
+      <a routerLink="/contact" class="hover:text-[#91D18B] transition" class="hover:text-[#91D18B] transition">Contact</a>
+      <button (click)="donate()" class="bg-[#E11D74] text-white px-4 py-2 rounded hover:bg-[#C01863] transition">
+        Donate
+      </button>
+      <button (click)="signin()" class="bg-[#91D18B] text-white px-4 py-2 rounded hover:bg-[#7BB778] transition">
+        Sign In
+      </button>
+    </nav>
+  </div>
+</header>

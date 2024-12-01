@@ -1,0 +1,20 @@
+/* our-work.component.css */
+
+/* Image hover effect for the Get Involved section */
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Ensure that the border around the image is consistent */
+.relative {
+    border-radius: 10px;
+}
+
+/* Optional: Add padding or shadow if you want the content to stand out */
+.bg-white {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}

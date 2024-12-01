@@ -1,0 +1,78 @@
+
+<!-- Hero Section -->
+<section class="relative bg-cover bg-center py-24" style="background-image: url('assets/images/hero-contact.jpg');">
+  <div class="bg-[#440047]/60 absolute inset-0"></div>
+  <div class="relative z-10 text-center text-white">
+    <h1 class="text-5xl font-bold">We'd Love to Hear from You!</h1>
+    <p class="mt-4 text-lg">
+      If you have any questions or want to learn more about our work, please reach out. We're here to help.
+    </p>
+    <div class="mt-8">
+      <a href="#contact-form" class="bg-[#91D18B] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#E11D74] transition">Contact Us Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Information Section -->
+<section class="py-16">
+  <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div>
+      <h2 class="text-4xl font-bold text-[#440047]">Contact Info</h2>
+      <p class="mt-4 text-lg text-[#440047]/80">Email: <a href="mailto:your-email@ngo.org" class="text-[#E11D74]">your-email&commat;maingo.org</a></p>
+      <p class="text-lg text-[#440047]/80">Phone: +123 456 7890</p>
+      <p class="text-lg text-[#440047]/80">Address: 123 NGO Street, Casablanca, Morocco</p>
+      
+      <div class="mt-8 flex space-x-6">
+        <a href="#" class="text-[#440047] hover:text-[#E11D74]"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="#" class="text-[#440047] hover:text-[#E11D74]"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="#" class="text-[#440047] hover:text-[#E11D74]"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#" class="text-[#440047] hover:text-[#E11D74]"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
+    </div>
+    <div>
+      <h2 class="text-4xl font-bold text-[#440047]">Business Hours</h2>
+      <p class="mt-4 text-lg text-[#440047]/80">Monday – Friday: 9 AM – 5 PM</p>
+      <p class="text-lg text-[#440047]/80">Saturday: 10 AM – 2 PM</p>
+      <p class="text-lg text-[#440047]/80">Sunday: Closed</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form Section -->
+<section id="contact-form" class="bg-[#FBECE5] py-16">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-4xl font-bold text-[#440047]">Contact Form</h2>
+    <form action="/send-message" method="POST" class="mt-8 max-w-lg mx-auto space-y-6">
+      <div>
+        <label for="name" class="block text-lg text-[#440047] ">Full Name</label>
+        <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-[#91D18B] rounded-md focus:outline-none focus:ring-2 focus:ring-[#E11D74] focus:border-none" required>
+      </div>
+      <div>
+        <label for="email" class="block text-lg text-[#440047]">Email Address</label>
+        <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-[#91D18B] rounded-md focus:outline-none focus:ring-2 focus:ring-[#E11D74] focus:border-none" required>
+      </div>
+      <div>
+        <label for="subject" class="block text-lg text-[#440047]">Subject</label>
+        <input type="text" id="subject" name="subject" class="w-full px-4 py-3 border border-[#91D18B]  rounded-md focus:outline-none focus:ring-2 focus:ring-[#E11D74] focus:border-none" required>
+      </div>
+      <div>
+        <label for="message" class="block text-lg text-[#440047]">Message</label>
+        <textarea id="message" name="message" class="w-full px-4 py-3 border border-[#91D18B] rounded-md focus:outline-none focus:ring-2 focus:ring-[#E11D74] focus:border-none" required></textarea>
+      </div>
+      <button type="submit" class="bg-[#E11D74] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#440047] transition focus:outline-none focus:ring-2 focus:ring-[#E11D74] focus:border-none">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Map Section (Optional) -->
+<section class="py-16">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-[#440047] text-center">Our Location</h2>
+    <div class="mt-8">
+      <!-- Google Maps Embed here -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6803680.3428686345!2d-11.6826691!3d33.6284016!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76b871f50c5c1%3A0x7ac946ed7408076b!2sRabat!5e0!3m2!1sen!2sma!4v1733042751168!5m2!1sen!2sma" width="600" height="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%"></iframe>
+     
+    </div>
+  </div>
+</section>
+

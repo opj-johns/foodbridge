@@ -1,0 +1,15 @@
+/* contact-us.component.css */
+
+/* Hover and Focus Styling for Inputs */
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #91D18B;
+    box-shadow: 0 0 0 3px rgba(145, 209, 139, 0.5);
+  }
+  
+  /* Submit Button Hover Effect */
+  button:hover {
+    background-color: #440047;
+    color: #ffffff;
+  }
+  

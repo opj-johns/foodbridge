@@ -1,0 +1,16 @@
+/* about-us-page.component.css */
+
+/* Add spacing and hover effects */
+a:hover {
+    filter: brightness(0.9);
+    transition: filter 0.2s ease-in-out;
+  }
+  
+  /* Rounded team images */
+  img.rounded-full {
+    transition: transform 0.3s;
+  }
+  img.rounded-full:hover {
+    transform: scale(1.05);
+  }
+  

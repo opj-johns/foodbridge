@@ -1,0 +1,38 @@
+<!-- our-work.component.html -->
+<section class="py-16 bg-[#faede7]">
+    <div class="container mx-auto px-4 md:px-8 text-center">
+      <!-- Section Title and Intro Text -->
+      <h2 class="text-3xl font-bold text-[#440047] mb-6">
+        Our Plan to Fight Hunger
+      </h2>
+      <p class="text-lg text-[#440047] mb-12">
+        We connect businesses, donors, and communities to help those in need. Here's how you can make an impact:
+      </p>
+  
+      <!-- Two-Columns Layout -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <!-- Left Column - Brief Explanation -->
+        <div class="text-center md:text-left">
+          <h3 class="text-2xl font-semibold text-[#440047] mb-4">Get Involved</h3>
+          <p class="text-lg text-[#440047] mb-4">
+            <strong>Businesses:</strong> Register those in need.<br>
+            <strong>Donors:</strong> Easily purchase meals from home.<br>
+            <strong>Together:</strong> We ensure food reaches those who need it most.
+          </p>
+          <button  (click)="getInvolved()" class="bg-[#E11D74] text-white font-semibold px-6 py-3 rounded hover:bg-[#C01863] transition duration-300">
+            Join Us
+          </button>
+        </div>
+  
+        <!-- Right Column - Image with Hover Effect -->
+        <div class="relative overflow-hidden rounded-lg border-4 border-[#E11D74] p-2">
+          <img
+            src="/get-involved.png"
+            alt="Get Involved Image"
+            class="transform transition-transform duration-300 hover:scale-105"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+  

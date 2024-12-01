@@ -1,0 +1,64 @@
+<!-- about-us.component.html -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-4 md:px-8">
+      <!-- Main Content -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <!-- Left Column - Image -->
+        <!-- Updated Image Section -->
+            <div 
+            class="relative w-full h-72 overflow-hidden rounded-lg border-4 border-[#91D18B]" 
+            (mouseover)="pauseCarousel()" 
+            (mouseleave)="resumeCarousel()"
+            >
+            <img 
+            *ngFor="let image of images; let i = index" 
+            [src]="image" 
+            [alt]="'About Us Image ' + (i + 1)" 
+            [class.active]="i === currentImageIndex" 
+            class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
+            />
+            </div>
+
+  
+        <!-- Right Column - Text -->
+        <div class="text-center md:text-left">
+          <h2 class="text-4xl font-bold text-[#440047] mb-4">About Us</h2>
+          <p class="text-lg text-[#440047]/80 mb-6">
+            At <span class="font-semibold text-[#E11D74]">FoodBridge</span>, we are dedicated to a future where everyone has access to  nutritious meals. By connecting people, businesses, and communities, we aim to create lasting change.
+          </p>
+          <p class="text-lg text-[#440047]/80">
+            Together, we can end hunger, one connection at a time. Let’s build a world where no one has to worry about their next meal.
+          </p>
+          
+        </div>
+      </div>
+  
+      <!-- Values Row -->
+      <div class="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+        <!-- Value 1 -->
+        <div class="p-6 bg-[#FBECE5] rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+          <div class="mb-4 flex justify-center">
+            <img src="assets/icons/heart.svg" alt="Heart Icon" class="h-10 w-10">
+          </div>
+          <h3 class="text-xl font-bold text-[#E11D74]">A Future Without Hunger</h3>
+        </div>
+  
+        <!-- Value 2 -->    
+        <div class="p-6 bg-[#FBECE5] rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+          <div class="mb-4 flex justify-center">
+            <img src="assets/icons/community.svg" alt="Community Icon" class="h-10 w-10">
+          </div>
+          <h3 class="text-xl font-bold text-[#E11D74]">Empowering Communities</h3>
+        </div>
+  
+        <!-- Value 3 -->
+        <div class="p-6 bg-[#FBECE5] rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+          <div class="mb-4 flex justify-center">
+            <img src="assets/icons/connection.svg" alt="Connection Icon" class="h-10 w-10">
+          </div>
+          <h3 class="text-xl font-bold text-[#E11D74]">Building Connections</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  

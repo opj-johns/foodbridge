@@ -1,0 +1,17 @@
+/* our-work.component.css */
+
+/* Icon hover effect */
+svg:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Add subtle animations to the grid items */
+  div > .flex {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  div > .flex:hover {
+    transform: translateY(-10px);
+  }
+  

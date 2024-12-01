@@ -1,0 +1,30 @@
+<!-- hero.component.html -->
+<section class="relative w-full h-screen bg-cover bg-center flex items-center justify-center text-center" style="background-image: url('/hero-bg.jpg');">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-[#440047] opacity-60"></div>
+  
+    <!-- Content -->
+    <div class="relative z-10 px-4 md:px-8 max-w-2xl text-[#FBECE5]">
+      <!-- Hero Message -->
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+        Take <span class="text-[#91D18B]">2 minutes.</span> Feed <br />
+        <span class="text-[#E11D74]">someone.</span> Make a <span class="text-[#91D18B]">Difference.</span>
+      </h1>
+  
+      <!-- Supporting Text -->
+      <p class="mt-4 text-lg md:text-xl text-[#FBECE5]/80">
+        Join us in our mission to end hunger by making a small impact in someone’s life today.
+      </p>
+  
+      <!-- Call-to-Action Buttons -->
+      <div class="mt-8 flex justify-center space-x-4">
+        <button (click)="donate()" class="bg-[#E11D74] text-white font-semibold px-6 py-3 rounded hover:bg-[#C01863] transition duration-300">
+          Donate Now
+        </button>
+        <button (click)="learnMore()" class="bg-transparent border-2 border-[#91D18B] text-[#91D18B] font-semibold px-6 py-3 rounded hover:bg-[#91D18B] hover:text-white transition duration-300">
+          Learn More
+        </button>
+      </div>
+    </div>
+  </section>
+  

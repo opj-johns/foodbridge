@@ -1,0 +1,73 @@
+<section class="text-center py-16 bg-gray-100">
+    <h1 class="text-4xl py-12 font-semibold text-[#E11D74]">Support the Cause: Your Contribution Makes a Difference</h1>
+    <p class="mt-4 text-lg text-gray-700">Join us in feeding those in need across Morocco. Contribute today and help us make a real impact.</p>
+  </section>
+  <section class="py-12 bg-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold text-[#E11D74]">Donate to Our Cause</h2>
+      <p class="mt-2 text-lg text-gray-600">Please send your contributions to the following bank account details:</p>
+  
+      <div class="mt-8 bg-gray-50 p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-bold text-gray-700">Bank Details:</h3>
+        <ul class="list-none mt-4 text-lg text-gray-800">
+          <li><strong>Bank Name:</strong> [Your Bank Name]</li>
+          <li><strong>Account Number:</strong> [Your Account Number]</li>
+          <li><strong>IBAN:</strong> [Your IBAN]</li>
+          <li><strong>SWIFT Code:</strong> [Your SWIFT Code]</li>
+          <li><strong>Bank Branch:</strong> [Your Branch]</li>
+        </ul>
+      </div>
+      <p class="mt-4 text-lg text-gray-600">After making a donation, kindly fill in the form below with your contribution details.</p>
+    </div>
+  </section>
+  <section class="py-12 bg-gray-100">
+    <div class="container mx-auto max-w-lg">
+      <h2 class="text-3xl font-semibold text-[#E11D74] text-center">Donation Details</h2>
+      <p class="mt-2 text-center text-lg text-gray-700">Thank you for your generous donation! Please fill out the details below to help us track your contribution.</p>
+  
+      <form action="/submit-donation" method="POST" class="mt-8 space-y-6">
+        <div class="grid grid-cols-1 gap-6">
+          <div>
+            <label for="name" class="block text-lg text-gray-700">Your Name</label>
+            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#E11D74] focus:border-none" required />
+          </div>
+  
+          <div>
+            <label for="amount" class="block text-lg text-gray-700">Donation Amount (MAD)</label>
+            <input type="number" id="amount" name="amount" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#E11D74] focus:border-none" required />
+          </div>
+  
+          <div>
+            <label for="receipt" class="block text-lg text-gray-700">Receipt (Upload Image)</label>
+            <input type="file" id="receipt" name="receipt" accept="image/*" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#E11D74] focus:border-none" required />
+          </div>
+  
+          <div>
+            <label for="notes" class="block text-lg text-gray-700">Additional Notes</label>
+            <textarea id="notes" name="notes" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#E11D74] focus:border-none"></textarea>
+          </div>
+  
+          <div class="text-center">
+            <button type="submit" class="px-6 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[#E11D74] focus:border-none">Submit Donation</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="py-12 bg-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold text-[#E11D74]">Thank You for Your Contribution!</h2>
+      <p class="mt-4 text-lg text-gray-700">Your donation is helping us provide meals to those in need. We will process your details and keep you updated.</p>
+    </div>
+  </section>
+  <section class="py-12 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h3 class="text-2xl font-semibold text-[#E11D74]">Additional Information</h3>
+      <ul class="mt-6 space-y-4 text-left text-lg text-gray-700">
+        <li><strong>Tax Deduction:</strong> Donations may be eligible for tax deductions in Morocco. Please consult your tax advisor.</li>
+        <li><strong>Transparency:</strong> We ensure that all contributions are used to provide food and support to those in need.</li>
+        <li><strong>Questions?</strong> Feel free to contact us via <a href="mailto:contact@yourngo.org" class="text-[#E11D74]">email</a> for any inquiries.</li>
+      </ul>
+    </div>
+  </section>
+          

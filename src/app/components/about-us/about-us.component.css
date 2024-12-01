@@ -1,0 +1,42 @@
+/* about-us.component.css */
+
+/* Hover effect for icons and values */
+.stat-card img {
+    transition: transform 0.3s ease;
+  }
+  
+  .stat-card img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Padding or spacing for additional polish */
+  .bg-white {
+    padding: 20px;
+  }
+
+  /* Ensure the images stack on top of each other */
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 0;
+  }
+  
+  /* Active image styling */
+  img.active {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  /* Parent container styling */
+  .relative {
+    position: relative;
+    height: 100%; /* Match container height */
+  }
+  
+  img:hover {
+    cursor: pointer;
+  }
+  

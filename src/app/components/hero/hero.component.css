@@ -1,0 +1,16 @@
+/* hero.component.css */
+
+/* Ensure smooth scaling and layout on mobile */
+section {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Responsive font scaling */
+h1 {
+    transition: font-size 0.3s ease;
+}
+
+/* Custom button hover effects for visual feedback */
+button:hover {
+    filter: brightness(1.1);
+}

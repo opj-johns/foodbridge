@@ -7,9 +7,6 @@
     <p class="mt-4 text-lg">
       Whether you're donating, volunteering, or partnering with us, your support helps us deliver food to students in need.
     </p>
-    <div class="mt-8">
-      <a href="#get-involved" class="bg-[#91D18B] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#E11D74] transition">Get Involved Today</a>
-    </div>
   </div>
 </section>
 
@@ -20,32 +17,34 @@
     <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
       <!-- Donate -->
       <div class="bg-[#FBECE5] p-6 rounded-lg shadow-lg">
-        <img src="assets/icons/donate.svg" alt="Donate Icon" class="w-16 h-16 mx-auto mb-4">
+        <img src="donate.gif" alt="Donate Icon" class="w-16 h-16 mx-auto mb-4">
         <h3 class="text-xl font-bold text-[#440047]">Donate</h3>
         <p class="text-[#440047]/80">
           Your donation helps us provide meals for university students in need.
         </p>
-        <a href="#donate" class="mt-4 bg-[#E11D74] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#440047] transition">Donate Now</a>
+        <br>
+        <a routerLink="/donate"  class="mt-4 bg-[#E11D74] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#440047] transition">Donate Now</a>
       </div>
       
       <!-- Volunteer -->
       <div class="bg-[#FBECE5] p-6 rounded-lg shadow-lg">
-        <img src="assets/icons/volunteer.svg" alt="Volunteer Icon" class="w-16 h-16 mx-auto mb-4">
-        <h3 class="text-xl font-bold text-[#440047]">Volunteer</h3>
+        <img src="help.gif" alt="Volunteer Icon" class="w-16 h-16 mx-auto mb-4">
+        <h3 class="text-xl font-bold text-[#440047]">Need a Package?</h3>
         <p class="text-[#440047]/80">
-          Lend your time to help us distribute meals and engage with students.
+          Are you a university student in need of food support?
         </p>
-        <a href="#volunteer" class="mt-4 bg-[#91D18B] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#E11D74] transition">Become a Volunteer</a>
+        <br>
+        <a routerLink="/contact" class="mt-4 bg-[#91D18B] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#E11D74] transition">Become a Beneficiary</a>
       </div>
-
       <!-- Partner -->
       <div class="bg-[#FBECE5] p-6 rounded-lg shadow-lg">
-        <img src="assets/icons/partner.svg" alt="Partner Icon" class="w-16 h-16 mx-auto mb-4">
+        <img src="partner.gif" alt="Partner Icon" class="w-16 h-16 mx-auto mb-4">
         <h3 class="text-xl font-bold text-[#440047]">Partner with Us</h3>
         <p class="text-[#440047]/80">
           Businesses and organizations can make a big difference by partnering with us.
         </p>
-        <a href="#partner" class="mt-4 bg-[#91D18B] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#E11D74] transition">Become a Partner</a>
+        <br>
+        <a routerLink="/contact" class="mt-4 bg-[#91D18B] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#E11D74] transition">Become a Partner</a>
       </div>
     </div>
   </div>
@@ -97,8 +96,8 @@
   <div class="container mx-auto px-4 text-center">
     <h2 class="text-4xl font-bold text-[#440047]">Help Us Feed the Future</h2>
     <div class="mt-8">
-      <a href="#donate" class="bg-[#E11D74] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#440047] transition">Donate Now</a>
-      <a href="#volunteer" class="bg-[#91D18B] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#440047] transition">Volunteer</a>
+      <a routerLink="/donate" routerLinkActive="active" class="bg-[#E11D74] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#440047] transition">Donate Now</a>
+      <!-- <a href="#volunteer" class="bg-[#91D18B] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#440047] transition">Volunteer</a> -->
     </div>
   </div>
 </section>

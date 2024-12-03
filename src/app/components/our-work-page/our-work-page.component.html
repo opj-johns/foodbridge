@@ -8,7 +8,7 @@
       We deliver sustainable monthly food packages to university students in Morocco, ensuring that no student studies on an empty stomach.
     </p>
     <div class="mt-8">
-      <a href="#register" class="bg-[#91D18B] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#E11D74] transition">Register Now</a>
+      <a routerLink="/contact" routerLinkActive="active" class="bg-[#91D18B] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#E11D74] transition">Register Now</a>
     </div>
   </div>
 </section>
@@ -20,21 +20,21 @@
     <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
       <div class="text-center">
         <div class="p-4 rounded-lg bg-[#91D18B]/10">
-          <img src="assets/icons/register.svg" alt="Register" class="w-16 h-16 mx-auto mb-4">
+          <img src="registration.gif" alt="Register" class="w-16 h-16 mx-auto mb-4">
           <h3 class="text-xl font-bold text-[#440047]">Student Registration</h3>
           <p class="text-[#440047]/80">University students sign up through our simple online form.</p>
         </div>
       </div>
       <div class="text-center">
         <div class="p-4 rounded-lg bg-[#91D18B]/10">
-          <img src="assets/icons/donation.svg" alt="Donations" class="w-16 h-16 mx-auto mb-4">
+          <img src="donation.gif" alt="Donations" class="w-16 h-16 mx-auto mb-4">
           <h3 class="text-xl font-bold text-[#440047]">Sponsorship and Funding</h3>
           <p class="text-[#440047]/80">Donors fund the food packages.</p>
         </div>
       </div>
       <div class="text-center">
         <div class="p-4 rounded-lg bg-[#91D18B]/10">
-          <img src="assets/icons/distribution.svg" alt="Distribution" class="w-16 h-16 mx-auto mb-4">
+          <img src="distribution.gif" alt="Distribution" class="w-16 h-16 mx-auto mb-4">
           <h3 class="text-xl font-bold text-[#440047]">Food Package Distribution</h3>
           <p class="text-[#440047]/80">Students collect packages from local supermarkets.</p>
         </div>
@@ -53,7 +53,7 @@
       </p>
     </div>
     <div class="flex-1">
-      <img src="assets/images/students.jpg" alt="Students receiving food" class="rounded-lg shadow-lg">
+      <img src="focus_on_studentsjpeg.jpeg" alt="Students receiving food" class="rounded-lg shadow-lg">
     </div>
   </div>
 </section>
@@ -63,16 +63,16 @@
   <div class="container mx-auto px-4 text-center">
     <h2 class="text-4xl font-bold text-[#440047]">Key Initiatives</h2>
     <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12">
-      <div>
-        <img src="assets/images/initiative1.jpg" alt="Meal Kits for Families" class="rounded-lg shadow-lg mb-4">
+      <div class="flex flex-col items-center justify-center text-center">
+        <img src="meal_kit.jpeg" alt="Meal Kits for Families" class="rounded-lg shadow-lg mb-4">
         <h3 class="text-2xl font-bold text-[#440047]">Sustainable Meal Program</h3>
         <p class="text-[#440047]/80">Providing eco-friendly, nutritious food packages every month.</p>
-      </div>
-      <div>
-        <img src="assets/images/initiative2.jpg" alt="Feeding School Children" class="rounded-lg shadow-lg mb-4">
+      </div>      
+      <div class="flex flex-col items-center justify-center text-center">
+        <img src="feeding_students.jpeg" alt="Feeding School Children" class="rounded-lg shadow-lg mb-4">
         <h3 class="text-2xl font-bold text-[#440047]">International Student Inclusion</h3>
         <p class="text-[#440047]/80">Ensuring international students feel supported and included.</p>
-      </div>
+      </div>      
     </div>
   </div>
 </section>
@@ -121,10 +121,11 @@
 <!-- Call to Action -->
 <section class="bg-[#91D18B]/10 py-16">
   <div class="container mx-auto px-4 text-center">
-    <h2 class="text-4xl font-bold text-[#440047]">Help Us Support University Students</h2>
+    <h2 class="text-4xl font-bold text-[#440047]">Help Us Support University Students In Need</h2>
     <div class="mt-8">
-      <a href="#donate" class="bg-[#E11D74] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#440047] transition">Donate Now</a>
-      <a href="#partner" class="bg-[#91D18B] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#440047] transition">Become a Partner</a>
+      <a routerLink="/donate" routerLinkActive="active" class="bg-[#E11D74] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#440047] transition">Donate Now</a>
+
+      <a routerLink="/get-involved" routerLinkActive="active" class="bg-[#91D18B] text-white px-6 py-3 ml-2 rounded-lg font-bold hover:bg-[#440047] transition">Become a Partner</a>
     </div>
   </div>
 </section>

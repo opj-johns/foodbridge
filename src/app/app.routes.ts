@@ -10,11 +10,11 @@ import { DonateComponent } from './components/donate/donate.component';
 
 export const routes: Routes = [
     { path: "", component: HomeComponent },
+    { path: "about-us", component: AboutUsPageComponent },
+    { path: "donate", component: DonateComponent },
     { path: "login", component: LoginComponent },
     { path: "signup", component: SignupComponent },
-    { path: "about-us", component: AboutUsPageComponent },
     { path: "our-work", component: OurWorkPageComponent },
     { path: "get-involved", component: GetInvolvedPageComponent },
     { path: "contact", component: ContactPageComponent },
-    { path: "donate", component: DonateComponent },
 ];

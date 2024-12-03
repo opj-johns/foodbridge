@@ -8,6 +8,7 @@ import { AboutUsComponent } from "../about-us/about-us.component";
 @Component({
     selector: 'app-home',
     imports: [CommonModule, HeroComponent, OurWorkComponent, GetInvolvedComponent, AboutUsComponent],
+    standalone: true,
     templateUrl: './home.component.html',
     styleUrl: './home.component.css'
 })

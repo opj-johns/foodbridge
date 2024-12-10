@@ -11,6 +11,7 @@ import { Component } from '@angular/core';
 export class AboutUsComponent {
   images: string[] = [
     'salam.jpg',
+    'john.png',
   ];
   currentImageIndex: number = 0;
   intervalId: any;
